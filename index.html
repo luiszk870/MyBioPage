@@ -36,7 +36,6 @@
         }
         .main-container {
             
-            background-color:green;
             width:80%;
             height:100%;
             display: flex;
@@ -61,7 +60,7 @@
             height:100%;
         }
         .bottom-container {
-            background-color:blue;
+            background-color: greenyellow;
             height: 500px;
             width:100%;
             margin-top:20px;
@@ -70,7 +69,8 @@
             float: left;
             width:180px;
             height:100%;
-            background-color:rgb(0, 247, 255);
+            background-color:rgb(155, 155, 155);
+            border: 1px dashed #DDD;
         }
         .left-sidebar ul {
             text-align: center;
@@ -84,16 +84,37 @@
         .left-sidebar ul li a:hover {
             color:white;
             opacity: 0.5;
-            background-color: rgb122,115,112)
+            background-color: rebeccapurple)
         }
         .gallery {
-            background: red;
+            background: rgb(155, 155, 155);
             float: right;
             height: calc(100% - 30px);
-            width: calc(100% - 210px);
+            width: calc(100% - 211px);
             padding: 15px;
         }
+        tbody{
+            display: block;
+            overflow: auto;
+        }
+        table.gallery-table {
+            display: block;
+            width: 100%;
+            overflow:auto
+            
+        }
+        table.gallery-table tr {
+            width: 100%;
 
+        }
+        table.gallery-table tr td {
+            padding: 5px;
+            width: 20%;
+        }
+        table.gallery-table img {
+            width: 230px;
+            height: 222px;
+        }
 
     </style>
 </head>
@@ -125,6 +146,29 @@
             </aside>
             <div class="gallery">
                 <h3>Gallery</h3>
+                <table class="gallery-table" cellpadding="2">
+                    <thead>
+                        <tr>
+                            <td><img src = "./img/1.jpg" alt="car1"></td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr><td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
 
             </div>
         </div>
